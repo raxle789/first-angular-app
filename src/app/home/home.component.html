@@ -1,0 +1,10 @@
+<p>This is home page!</p>
+<app-greeting [message]="homeMessage()" />
+<input type="text" (keyup)="keyUpHandler($event)" />
+
+<p class="font-semibold text-lg mb-2">counter: {{ counterValue() }}</p>
+<div class="flex gap-2">
+  <button class="btn btn-primary" (click)="increment()">Increment</button>
+  <button class="btn btn-neutral" (click)="reset()">Reset</button>
+  <button class="btn btn-secondary" (click)="decrement()">Decrement</button>
+</div>
